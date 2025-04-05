@@ -1,59 +1,138 @@
 ﻿<!DOCTYPE html>
 <html lang="no">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harvesta</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f5faff;
-            color: #333;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harvesta - Gården og livet</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
 
-        header {
-            background-color: #0b5394;
-            color: white;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
+    header {
+      background-color: #dde7f0;
+      color: #355e3b;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
 
-        main {
-            padding: 2rem 1rem;
-            max-width: 800px;
-            margin: auto;
-        }
+    nav {
+      background-color: #355e3b;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
 
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #e0e0e0;
-            margin-top: 3rem;
-            font-size: 0.9rem;
-        }
-    </style>
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .tile {
+      background-color: #eaf1e5;
+      border-left: 6px solid #355e3b;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .tile h3 {
+      margin-top: 0;
+    }
+
+    .tile a {
+      display: inline-block;
+      margin-top: 1rem;
+      text-decoration: none;
+      color: #355e3b;
+      font-weight: bold;
+    }
+
+    .tile a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #e0e0e0;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <h1>Harvesta</h1>
-    <p>Bærekraftig utvikling og rådgivning</p>
+  <h1>Harvesta</h1>
+  <p>Bonden og aktuaren - et liv med jord og tall</p>
 </header>
 
+<nav>
+  <a href="index.html">Hjem</a>
+  <a href="om-garden.html">Om gården</a>
+  <a href="gardsdrift.html">Gårdsdriften</a>
+  <a href="bilder.html">Bilder</a>
+  <a href="kontakt.html">Kontakt</a>
+</nav>
+
 <main>
-    <p>Harvesta er et uavhengig konsulentselskap med fokus på bærekraft, ansvarlig styring og fremtidsrettede løsninger.</p>
-    <p>Nettsiden er under utvikling. Ta gjerne kontakt for mer informasjon:</p>
-    <p><strong>E-post:</strong> kontakt@harvesta.no</p>
+  <h2>Velkommen til Harvesta</h2>
+  <p>Her finner du innblikk i livet på gården jeg driver i Ringsaker. Nettsiden er delt opp i ulike tema, slik at du lett kan finne det som interesserer deg.</p>
+
+  <div class="grid">
+    <div class="tile">
+      <h3>Om gården</h3>
+      <p>Historien bak Harvesta og eierskapet siden 2004.</p>
+      <a href="om-garden.html">Les mer</a>
+    </div>
+    <div class="tile">
+      <h3>Gårdsdriften</h3>
+      <p>Om årshjul, maskinpark og planlegging.</p>
+      <a href="gardsdrift.html">Les mer</a>
+    </div>
+    <div class="tile">
+      <h3>Bilder</h3>
+      <p>Se bilder fra årstider, arbeid og maskiner.</p>
+      <a href="bilder.html">Gå til galleri</a>
+    </div>
+    <div class="tile">
+      <h3>Kontakt</h3>
+      <p>Spør om gården eller kombinasjonen med aktuarfaget.</p>
+      <a href="kontakt.html">Kontakt meg</a>
+    </div>
+  </div>
 </main>
 
 <footer>
-    &copy; 2025 Harvesta. Alle rettigheter reservert.
+  &copy; 2025 Harvesta - Kyrre F. Pedersen
 </footer>
 
 </body>
