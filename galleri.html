@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harvesta – Gård og kornproduksjon i Ringsaker</title>
+  <title>Galleri | Harvesta</title>
   <style>
     body {
       margin: 0;
@@ -72,36 +72,28 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     }
 
-    .cards {
+    .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
+      gap: 1.5rem;
       margin-top: 2rem;
     }
 
-    .card {
-      background: #f0f0f0;
+    .gallery-grid figure {
+      margin: 0;
+    }
+
+    .gallery-grid img {
+      width: 100%;
       border-radius: 8px;
-      padding: 1rem;
-      box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .gallery-grid figcaption {
       text-align: center;
-    }
-
-    .card h3 {
-      color: #003366;
-      margin-top: 0;
-    }
-
-    .card a {
-      display: inline-block;
-      margin-top: 0.5rem;
-      color: #003366;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .card a:hover {
-      text-decoration: underline;
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 0.4rem;
     }
 
     footer {
@@ -115,58 +107,30 @@
 <body>
   <header class="hero">
     <div class="overlay">
-      <h1>HARVESTA</h1>
-      <p>Gård og kornproduksjon i Ringsaker</p>
+      <h1>Galleri</h1>
+      <p>Stemninger fra gårdslivet og naturen rundt</p>
     </div>
   </header>
 
   <nav>
-    <a href="index.html" class="active">Hjem</a>
+    <a href="index.html">Hjem</a>
     <a href="aktuar.html">Aktuar</a>
     <a href="om-garden.html">Om gården</a>
     <a href="utleie.html">Utleie</a>
-    <a href="galleri.html">Galleri</a>
+    <a href="galleri.html" class="active">Galleri</a>
     <a href="lokalomrade.html">Lokalmiljø</a>
     <a href="kontakt.html">Kontakt</a>
   </nav>
 
   <main>
-    <h2>Velkommen</h2>
-    <p>Her vil jeg dele bilder og innblikk fra gårdsdriften – korn, maskiner, utleie og natur. Nettsiden er under utvikling, men det kommer snart mer.</p>
+    <h2>Galleri</h2>
+    <p>Her deler jeg bilder fra året på Harvesta – alt fra våronn og innhøsting til snødekte åkre, maskiner og det nydelige landskapet rundt gården.</p>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Om gården</h3>
-        <p>Les om historien, jorda og hva som dyrkes her på Harvesta.</p>
-        <a href="om-garden.html">Les mer</a>
-      </div>
-      <div class="card">
-        <h3>Utleie</h3>
-        <p>Vi tilbyr enkel overnatting i landlige omgivelser – ta kontakt!</p>
-        <a href="utleie.html">Les mer</a>
-      </div>
-      
-      <div class="card">
-		<h3>Aktuar</h3>
-		<p>Les hva en aktuar er og hvordan jeg jobber ved siden av gårdsdriften.</p>
-		<a href="aktuar.html">Les mer</a>
-	  </div>
-      
-      <div class="card">
-        <h3>Galleri</h3>
-        <p>Se bilder fra våronn, maskiner, åkrene og årstidene på gården.</p>
-        <a href="galleri.html">Les mer</a>
-      </div>
-      <div class="card">
-        <h3>Lokalmiljø</h3>
-        <p>Om Mjøsa, Ringsaker, skiløyper, småby og kulturlandskap rundt.</p>
-        <a href="lokalomrade.html">Les mer</a>
-      </div>
-      <div class="card">
-        <h3>Kontakt</h3>
-        <p>Ta gjerne kontakt for spørsmål om drift, utleie eller samarbeid.</p>
-        <a href="kontakt.html">Les mer</a>
-      </div>
+    <div class="gallery-grid">
+      <figure>
+        <img src="bilder/potetopptaker.jpg" alt="Traktor med potetopptaker WM 8500 på jorde i solnedgang">
+        <figcaption>Traktor med potetopptaker – WM 8500 i arbeid en høstkveld</figcaption>
+      </figure>
     </div>
   </main>
 
